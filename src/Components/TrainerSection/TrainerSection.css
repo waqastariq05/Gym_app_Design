@@ -1,0 +1,90 @@
+.trainerSection.pad-50 {
+    padding-bottom: 0;
+}
+
+.trainerSection .trainer {
+    background-image: url(../../assets/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 80px;
+    overflow: hidden;
+}
+
+.trainerSection .trainer .box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.trainerSection .trainer .box img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom: -5px;
+    transition: all .3s ease;
+}
+
+.trainerSection .trainer .box .text {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: #1425af;
+    z-index: -1;
+    padding: 15px 20px;
+    transform: translateY(-50%);
+    opacity: 0;
+    text-align: right;
+    transition: all .3s ease;
+}
+
+.trainerSection .trainer .box .text::before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: -14px;
+    bottom: 0;
+    content: '';
+    width: 50px;
+    transform: skew(-15deg);
+    background: #e1193e;
+}
+
+.trainerSection .trainer .box .text::after {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+    content: '';
+    border: 1px dashed rgba(255, 255, 255, .6);
+    z-index: -1;
+}
+
+.trainerSection .trainer .box .text h2 {
+    /* width: 80px; */
+    /* padding-right: 50px; */
+    font-size: 20px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    z-index: 1;
+}
+
+.trainerSection .trainer .box:hover img {
+    margin-left: -50px;
+}
+
+.trainerSection .trainer .box:hover .text {
+    opacity: 1;
+    margin-right: -30px;
+}

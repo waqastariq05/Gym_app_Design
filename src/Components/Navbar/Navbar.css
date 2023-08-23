@@ -1,0 +1,182 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+}
+
+/* Mini Header */
+header .mini-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 2px;
+    cursor: pointer;
+}
+
+header .mini-header .phone {
+    cursor: text;
+}
+
+header .mini-header .phone span {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+header .mini-header .phone span:nth-child(1) {
+    color: #e1193e;
+}
+
+header .mini-header .phone span:nth-child(2) {
+    color: #fff;
+}
+
+header .mini-header .social ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 7px;
+    list-style: none;
+    width: 24px;
+    width: 24px;
+    margin: 0 2px;
+}
+
+header .mini-header .social ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 24px;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+header .mini-header .social ul li a::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transform: skew(-25deg);
+    background: #e1193e;
+    transition: all .2s linear;
+}
+
+header .mini-header .social ul li a:hover::after {
+    background: #001eff;
+}
+
+.navbar {
+    padding: 5px 0;
+}
+
+.navbar .navbar-brand img {
+    max-width: 90%;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-nav .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Oswald", sans-serif;
+    padding: 10px 5px;
+    position: relative;
+    transition: all 0.3s;
+    margin: 0 10px;
+}
+
+.navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    height: 1px;
+    width: 100%;
+    background: #e1193e;
+    content: "";
+    transform: rotate(-20deg);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+    opacity: 1;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #e1193e;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #e1193e;
+}
+
+.navbar .navbar-nav .nav-link.active::after {
+    opacity: 1;
+}
+
+/* Navbar Button */
+.navbar .nav-btn .btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    background: #e1193e;
+    padding: 15px 20px;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    font-family: 'Roboto';
+    border: none;
+}
+
+.navbar .nav-btn .btn::before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    content: '';
+    width: 45px;
+    transform: skew(-25deg);
+    background: #e1193e;
+}
+
+.navbar .nav-btn::after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: rgba(210, 227, 238, 0);
+    background: linear-gradient(to right, rgba(210, 227, 238, 0) 0%, #e1193e 100%);
+}
+
+.navbar .nav-btn .btn:active {
+    background: var(--red) !important;
+}
+
+
+header .nav.fixed-top .nav-btn::after {
+    right: 120px;
+}

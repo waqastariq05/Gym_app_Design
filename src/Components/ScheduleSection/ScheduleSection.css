@@ -1,0 +1,77 @@
+.scheduleSection .nav {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.scheduleSection .nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    margin: 0 3px;
+    transition: all .3s ease;
+}
+
+.scheduleSection .nav .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #e1193e;
+}
+
+.scheduleSection .nav .nav-item .nav-link:hover {
+    color: #fff;
+    background-color: #e1193e;
+}
+
+.scheduleSection .schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scheduleSection .schedule .box {
+    padding: 40px 35px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.scheduleSection .schedule .box .time {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 7px 18px;
+    margin-bottom: 15px;
+}
+
+.scheduleSection .schedule .box .text h2 {
+    font-size: 24px;
+    font-family: "Roboto Condensed";
+    color: #e1193e;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.scheduleSection .schedule .box .text p {
+    color: #808080;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.scheduleSection .schedule .box.active {
+    background-color: #e1193e;
+}
+
+.scheduleSection .schedule .box.active .time {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.scheduleSection .schedule .box.active .text h2,
+.scheduleSection .schedule .box.active .text p {
+    color: #fff;
+}

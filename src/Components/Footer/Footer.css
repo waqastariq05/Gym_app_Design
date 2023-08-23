@@ -1,0 +1,114 @@
+footer {
+    background-color: #030513;
+}
+
+footer .row {
+    padding: 100px 0 50px 0;
+}
+
+footer .row .col-md-3 {
+    padding: 0 20px;
+}
+
+footer .row .col-md-4 {
+    padding: 0 15px;
+}
+
+footer .row .col-md-3:nth-child(4) {
+    padding: 0;
+}
+
+footer .logo img {
+    max-width: 50%;
+    margin-bottom: 25px;
+}
+
+footer .text {
+    color: rgba(255, 255, 255, .7);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+footer .text .socio {
+    display: inline-block;
+}
+
+footer .socio a .icon {
+    font-size: 14px;
+    background-color: #e1193e;
+    color: #fff;
+    border-radius: 100%;
+    padding: 12px 0;
+    width: 40px;
+    text-align: center;
+    margin: 0 4px;
+    transition: all .3s ease;
+}
+
+footer .socio a:hover .icon {
+    background-color: var(--blue);
+}
+
+footer h2 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+footer .list {
+    padding: 0;
+    list-style: none;
+}
+
+footer .list li {
+    padding: 10px 0;
+    color: rgba(255, 255, 255, .7);
+    font-size: 15px;
+}
+
+footer .list li a {
+    color: rgba(255, 255, 255, .7);
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: all .3s ease;
+}
+
+footer .list li:hover a {
+    color: #e1193e;
+}
+
+footer .list li a .fa-arrow-right {
+    position: relative;
+    top: -2px;
+    font-size: 10px;
+    margin-right: 5px;
+    color: #e1193e;
+}
+
+footer .list li .ficon {
+    font-size: 14px;
+    top: 0;
+    margin-right: 8px;
+    color: #e1193e;
+}
+
+footer .mini-footer {
+    padding: 50px 0;
+    text-align: center;
+    border-top: 1px dotted rgba(255, 255, 255, .4);
+}
+
+footer .mini-footer p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .7);
+    letter-spacing: .5px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+footer .mini-footer p span {
+    color: #e1193e;
+}

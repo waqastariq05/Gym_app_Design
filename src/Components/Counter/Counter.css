@@ -1,0 +1,45 @@
+.counter {
+    width: 100%;
+    background: #1425af;
+    background-image: linear-gradient(103deg, #1425af 25%, #1d2cb5 25%, #1d2cb5 50%, #1425af 50%, #1425af 75%, #1d2cb5 75%, #1d2cb5 100%);
+    position: relative;
+    z-index: 0;
+}
+
+.counter::after {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    bottom: 0;
+    content: '';
+    width: 70px;
+    transform: skew(-15deg);
+    background: #e1193e;
+}
+
+.counter .counterBox {
+    display: flex;
+    align-items: center;
+}
+
+.counter .counterBox div {
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.counter .counterBox div h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0 0 5px;
+}
+
+.counter .counterBox div p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 0;
+}
