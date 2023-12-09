@@ -112,3 +112,102 @@ footer .mini-footer p {
 footer .mini-footer p span {
     color: #e1193e;
 }
+
+
+/* ================= Responsivess =============== */
+@media (max-width: 991.98px) {
+    footer .text {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    footer .socio a .icon {
+        padding: 10px 0;
+        width: 35px;
+        margin: 0 5px;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+
+    footer .list li {
+        font-size: 13px;
+    }
+
+    footer .list li a {
+        font-size: 13px;
+    }
+
+    footer .list li a .fa-arrow-right {
+        font-size: 8px;
+        margin-right: 3px;
+    }
+
+    footer .list li .ficon {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    footer .row {
+        row-gap: 30px;
+    }
+
+    footer .row .col-md-2 {
+        padding: 0;
+    }
+
+    footer .row .col-md-3 {
+        padding: 0;
+    }
+
+    footer .row .col-md-4 {
+        padding: 0;
+    }
+
+    footer .text {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    footer .socio a .icon {
+        padding: 12px 0;
+        width: 40px;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+
+    footer .list li {
+        font-size: 15px;
+    }
+
+    footer .list li a {
+        font-size: 15px;
+    }
+
+    footer .list li a .fa-arrow-right {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+
+    footer .list li .ficon {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    footer .row {
+        padding: 100px 15px 50px 15px;
+    }
+
+    footer .socio {
+        margin-bottom: 20px;
+    }
+}

@@ -7,16 +7,16 @@ import s3 from '../../assets/icons/3.png'
 const ServiceSection = () => {
     return (
         <div className='serviceSection pad-50'>
-            <div class="container">
-                <div class="top">
-                    <small class="bars">
-                        <i class="left-bar"></i>
+            <div className="container">
+                <div className="top">
+                    <small className="bars">
+                        <i className="left-bar"></i>
                         Services
-                        <i class="right-bar"></i>
+                        <i className="right-bar"></i>
                     </small>
                     <h2>KICK YOUR <span>FEET</span> UP</h2>
                 </div>
-                <div class="body">
+                <div className="body">
                     <div className="row">
                         <div className="col-md-4">
                             <Card img={s2} title="TONS OF CARDIO & STRENGTH" text="A small river named Duden flows by their place and supplies it with the necessary regelialia.It is a paradisematic country" />

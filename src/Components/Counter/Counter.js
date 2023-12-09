@@ -3,8 +3,8 @@ import '../Counter/Counter.css'
 
 const Counter = () => {
     return (
-        <div class="counter">
-            <div class="counterBox">
+        <div className="counter">
+            <div className="counterBox">
                 <div>
                     <h2>10+</h2>
                     <p>Years of experienced</p>

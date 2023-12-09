@@ -1,5 +1,5 @@
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -81,6 +81,25 @@ header .mini-header .social ul li a:hover::after {
     padding: 5px 0;
 }
 
+.navbar.active {
+    background: rgb(0, 0, 0, .8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 5px 80px;
+    animation: navSticky .3s forwards linear;
+}
+
+@keyframes navSticky {
+    0% {
+        top: -20%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
 .navbar .navbar-brand img {
     max-width: 90%;
 }
@@ -109,7 +128,7 @@ header .mini-header .social ul li a:hover::after {
     position: absolute;
     left: 0;
     top: 22px;
-    height: 1px;
+    height: 1.5px;
     width: 100%;
     background: #e1193e;
     content: "";
@@ -132,6 +151,19 @@ header .mini-header .social ul li a:hover::after {
 
 .navbar .navbar-nav .nav-link.active::after {
     opacity: 1;
+}
+
+.navbar-toggler {
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    font-size: 24px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 /* Navbar Button */
@@ -176,7 +208,61 @@ header .mini-header .social ul li a:hover::after {
     background: var(--red) !important;
 }
 
+.navbar.active .nav-btn::after {
+    right: 80px;
+}
 
-header .nav.fixed-top .nav-btn::after {
-    right: 120px;
+
+/* ================== Responsivesness ===================== */
+@media (max-width: 991.98px) {
+    header {
+        background: rgb(0, 0, 0, .8);
+    }
+
+    .navbar .navbar-nav {
+        margin: 10px 0;
+    }
+
+    .navbar .nav-btn .btn {
+        width: 90%;
+        float: right;
+    }
+
+    .navbar .nav-btn .btn::before {
+        top: 0;
+        left: -20px;
+        bottom: 0;
+        content: '';
+        width: 45px;
+        transform: skew(-25deg);
+        background: #e1193e;
+    }
+
+    .navbar .nav-btn::after {
+        position: relative;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .navbar.active {
+        padding: 5px 60px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar.active {
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 375.98px) {
+    header .mini-header .phone span {
+        font-size: 14px;
+    }
+
+    header .mini-header .social ul li a {
+        width: 22px;
+        height: 22px;
+    }
 }

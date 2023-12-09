@@ -8,7 +8,6 @@
     width: 100%;
     padding: 40px 0 40px 0;
     background: #ffffff;
-    /* box-shadow: 0 24px 48px -13px rgb(0 0 0 / 10%); */
     text-align: center;
     margin: 0px 10px 0px 10px;
     position: relative;
@@ -49,6 +48,7 @@
 .pricingSection .box .box-body ul {
     list-style: none;
     margin-bottom: 30px;
+    padding: 0;
 }
 
 .pricingSection .box .box-body ul li {
@@ -84,4 +84,73 @@
 
 .pricingSection .box .box-body .btn:hover {
     background: var(--blue);
+}
+
+/* ============ Responsivness ============ */
+@media (max-width: 991.98px) {
+    .pricingSection .box h6 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .pricingSection .box .header span {
+        font-size: 20px;
+        top: 6px;
+    }
+
+    .pricingSection .box .header h2 {
+        font-size: 46px;
+        margin-bottom: 15px;
+    }
+
+    .pricingSection .box .box-body ul {
+        margin-bottom: 25px;
+    }
+
+    .pricingSection .box .box-body ul li {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .pricingSection .box .box-body ul li .fa-arrow-right {
+        font-size: 8px;
+        margin-right: 3px;
+        top: 0px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pricingSection .box {
+        margin: 0;
+    }
+
+    .pricingSection .box h6 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .pricingSection .box .header span {
+        font-size: 24px;
+        top: 5px;
+    }
+
+    .pricingSection .box .header h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .pricingSection .box .box-body ul {
+        margin-bottom: 30px;
+    }
+
+    .pricingSection .box .box-body ul li {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .pricingSection .box .box-body ul li .fa-arrow-right {
+        font-size: 10px;
+        margin-right: 5px;
+        top: -2px;
+    }
 }

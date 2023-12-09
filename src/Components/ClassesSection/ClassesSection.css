@@ -118,3 +118,69 @@
     text-transform: uppercase;
     letter-spacing: .5px;
 }
+
+/* ============ Responsivness ============ */
+@media (max-width: 991.98px) {
+    .classesSection .box {
+        height: 300px;
+    }
+
+    .classesSection .box .box-body p {
+        top: 30px;
+        font-size: 18px;
+    }
+
+    .classesSection .box .box-body h2 {
+        width: 75%;
+    }
+
+    .classesSection .box .box-body a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .classesSection .box {
+        height: 400px;
+    }
+
+    .classesSection .box .box-body p {
+        top: 40px;
+        font-size: 20px;
+    }
+
+    .classesSection .box .box-body h2 {
+        width: 70%;
+        padding: 15px 30px;
+    }
+
+    .classesSection .box .box-body a {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .classesSection .box {
+        height: 300px;
+    }
+
+    .classesSection .box .box-body p {
+        top: 30px;
+        font-size: 18px;
+    }
+
+    .classesSection .box .box-body h2 {
+        width: 70%;
+        padding: 10px 30px;
+    }
+
+    .classesSection .box .box-body a {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 320.98px) {
+    .classesSection .box .box-body a {
+        font-size: 20px;
+    }
+}

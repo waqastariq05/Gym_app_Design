@@ -1,14 +1,14 @@
 .aboutSection .row {
-    align-items: center;
+    align-items: end;
 }
 
 .aboutSection .about-img {
     position: relative;
-    bottom: -5px;
 }
 
 .aboutSection .about-img img {
-    height: 40vw;
+    width: 100%;
+    height: 100%;
 }
 
 .aboutSection .about-text {
@@ -81,4 +81,97 @@
 
 .aboutSection .about-text ul li a:hover {
     color: #e1193e;
+}
+
+/* ============= Responsiveness ================ */
+@media (max-width: 991.98px) {
+    .aboutSection .about-text {
+        padding: 0 0 0 40px;
+    }
+
+    .aboutSection .about-text h6 {
+        margin-bottom: 14px;
+    }
+
+    .aboutSection .about-text h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .aboutSection .about-text p {
+        font-size: 14px;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .aboutSection .about-text ul li a {
+        font-size: 14px;
+        line-height: 2.2;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .aboutSection .row {
+        gap: 20px;
+    }
+
+    .aboutSection .about-img {
+        order: 2;
+    }
+
+    .aboutSection .about-text {
+        padding: 0;
+    }
+
+    .aboutSection .about-text h6 {
+        margin-bottom: 16px;
+    }
+
+    .aboutSection .about-text h2 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .aboutSection .about-text p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .aboutSection .about-text ul li a {
+        font-size: 15px;
+        line-height: 2.6;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .aboutSection {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .aboutSection .about-img {
+        order: 2;
+        padding: 0;
+    }
+
+    .aboutSection .about-text h6 {
+        margin-bottom: 14px;
+        font-size: 12px;
+    }
+
+    .aboutSection .about-text h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .aboutSection .about-text p {
+        font-size: 14px;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .aboutSection .about-text ul li a {
+        font-size: 14px;
+    }
 }

@@ -43,3 +43,58 @@
     color: #ffffff;
     margin-bottom: 0;
 }
+
+/* ========= Responsiveness =============== */
+@media (max-width: 991.98px) {
+    .counter .counterBox div h2 {
+        font-size: 30px;
+    }
+
+    .counter .counterBox div p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .counter::after {
+        left: -20px;
+        width: 50px;
+    }
+
+    .counter .counterBox div h2 {
+        font-size: 25px;
+    }
+
+    .counter .counterBox div p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .counter {
+        background-image: linear-gradient(103deg, #1425af 50%, #1d2cb5 25%, #1d2cb5 100%, #1425af 50%, #1425af 75%, #1d2cb5 75%, #1d2cb5 100%);
+    }
+
+    .counter::after {
+        left: -30px;
+        width: 60px;
+    }
+
+    .counter .counterBox {
+        flex-wrap: wrap;
+    }
+
+    .counter .counterBox div {
+        width: 50%;
+        padding: 20px 10px;
+    }
+
+
+    .counter .counterBox div h2 {
+        font-size: 24px;
+    }
+
+    .counter .counterBox div p {
+        font-size: 10px;
+    }
+}

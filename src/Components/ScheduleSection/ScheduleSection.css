@@ -26,13 +26,15 @@
 
 .scheduleSection .schedule {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    row-gap: 35px;
 }
 
 .scheduleSection .schedule .box {
     padding: 40px 35px;
-    margin: 0 5px;
     text-align: center;
 }
 
@@ -74,4 +76,27 @@
 .scheduleSection .schedule .box.active .text h2,
 .scheduleSection .schedule .box.active .text p {
     color: #fff;
+}
+
+
+/* ============ Responsivness ============ */
+@media (max-width: 767.98px) {
+    .scheduleSection .schedule .box {
+        width: 230px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .scheduleSection .nav {
+        padding: 10px 0;
+    }
+
+    .scheduleSection .nav .nav-item .nav-link {
+        font-size: 16px;
+        padding: 14px 22px;
+    }
+
+    .scheduleSection .schedule .box {
+        width: 100%;
+    }
 }

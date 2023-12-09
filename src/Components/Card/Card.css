@@ -86,3 +86,108 @@
 .card:hover .icon span::after {
     transform: rotate(0deg);
 }
+
+/* ============= Responsiveness ================ */
+@media (max-width: 991.98px) {
+    .card {
+        padding: 20px 30px;
+    }
+
+    .card::after {
+        left: -10px;
+    }
+
+    .card .icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+
+    .card .icon span {
+        padding: 10px 0;
+    }
+
+    .card .icon span img {
+        width: 50px;
+    }
+
+    .card-body h2 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .card .card-body p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .card::after {
+        top: -30px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: none;
+        border-top: 1px dashed var(--blue);
+        border-left: 0;
+    }
+
+    .card .icon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+
+    .card .icon span {
+        padding: 15px 0;
+    }
+
+    .card .icon span img {
+        width: 60px;
+    }
+
+    .card-body h2 {
+        font-size: 30px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .card .card-body p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card {
+        padding: 20px 10px;
+    }
+
+    .card .icon {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 30px;
+    }
+
+    .card .icon span {
+        padding: 12px 0;
+    }
+
+    .card .icon span img {
+        width: 55px;
+    }
+
+    .card-body h2 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .card .card-body p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}

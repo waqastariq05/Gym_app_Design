@@ -5,7 +5,7 @@ import Counter from '../Counter/Counter'
 
 const AboutSection = () => {
     return (
-        <div className='aboutSection pad-50'>
+        <div className='aboutSection pad-50' id='about'>
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 about-img">
@@ -18,9 +18,9 @@ const AboutSection = () => {
                             blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
                             ocean.</p>
                         <ul>
-                            <li><a href=""><i class="fa-solid fa-arrow-right"></i> MEN FITNESS AND WORKOUT</a></li>
-                            <li><a href=""><i class="fa-solid fa-arrow-right"></i> WOMEN FITNESS AND WORKOUT</a></li>
-                            <li><a href=""><i class="fa-solid fa-arrow-right"></i> PERSONAL TRAININGS</a></li>
+                            <li><a href=""><i className="fa-solid fa-arrow-right"></i> MEN FITNESS AND WORKOUT</a></li>
+                            <li><a href=""><i className="fa-solid fa-arrow-right"></i> WOMEN FITNESS AND WORKOUT</a></li>
+                            <li><a href=""><i className="fa-solid fa-arrow-right"></i> PERSONAL TRAININGS</a></li>
                         </ul>
                     </div>
                 </div>
